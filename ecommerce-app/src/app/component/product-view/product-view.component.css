@@ -15,3 +15,7 @@ body{
 .card-img-actions{
     position: relative;
 }
+
+a{
+    text-decoration: none;
+}
