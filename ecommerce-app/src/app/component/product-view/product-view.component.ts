@@ -11,12 +11,13 @@ export class ProductViewComponent implements OnInit {
   data!:product[]
   constructor(private api:ApiService){}
   ngOnInit(): void {
-    
+    this.displayproducts();
   }
 
   displayproducts(){
     this.api.getproduct().subscribe(res=> {
       this.data = res;
+      console.log(res)
     })
   }
 }
