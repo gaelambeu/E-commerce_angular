@@ -8,7 +8,7 @@ import { product } from './productmodal';
   styleUrls: ['./product-view.component.css']
 })
 export class ProductViewComponent implements OnInit {
-  data!:product[]
+  data:any|product[]
   constructor(private api:ApiService){}
   ngOnInit(): void {
     this.displayproducts();
